@@ -1168,10 +1168,10 @@ static int check_version(Elf_Shdr *sechdrs,
 	unsigned int i, num_versions;
 	struct modversion_info *versions;
 
-    if(!strncmp("wlan", mod->name, 4))
+        if(!strncmp("wlan", mod->name, 4))
 		return 1;
 
-    if(!strncmp("radio_iris_transport", mod->name, 4))
+        if(!strncmp("radio_iris_transport", mod->name, 4))
 		return 1;
 
 	/* Exporting module didn't supply crcs?  OK, we're already tainted. */
